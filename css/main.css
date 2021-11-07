@@ -8,7 +8,7 @@
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
+    position: relative;
 }
 
 @media screen and (max-width: 576px)  {
@@ -18,6 +18,10 @@
     .navbar .logo a, .navbar .links .project{
         display: none;
     }
+    form{
+        left: 4% !important;
+        width: 400px !important;
+    }
 }
 @media screen and (min-width: 576px)  {
     .container {
@@ -25,6 +29,10 @@
     }
     .navbar .logo a, .navbar .links .project{
         display: none;
+    }
+    form{
+        left: 15% !important;
+        width: 400px !important;
     }
 }
 
@@ -35,6 +43,10 @@
     .navbar .logo a, .navbar .links .project{
         display: none;
     }
+    form{
+        left: 30% !important;
+        width: 400px !important;
+    }
 }
 
 @media screen and (min-width: 992px)  {
@@ -44,7 +56,9 @@
     .navbar .logo a, .navbar .links .project{
         display: block;
     }
-    
+    form{
+        width: 500px !important;
+    }
 }
 
 @media screen and (min-width: 1200px)  {
@@ -58,6 +72,7 @@
     justify-content: space-between;
     background-color: rgb(238, 234, 229);
     padding: 5px;
+    height: 45px;
     
 }
 
@@ -78,11 +93,11 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
     margin: 0 10px;
-    width: 145px;
+    padding: 22px 0;
 }
 
 .navbar .logo a:hover, .navbar .links .link:hover{
-    color: rgb(74, 18, 230);
+    background-color: rgb(211, 231, 231);
 }
 
 .navbar .links {
@@ -91,17 +106,25 @@
     justify-content: end;
 }
 
-.navbar .links a{
+.navbar .links button{
     color: #000;
     font-size: 22px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
     margin: 0 10px;
+    padding: 22px 0;
+    border: none;
+}
+.navbar .links button:hover{
+    background-color: rgb(211, 231, 231);
+    cursor: pointer;
 }
 
 .navbar .links .project{
-    background-color: #f77d0e;
+    background-color: #f20091;
     padding: 10px;
+    color: white;
+    text-decoration: none;
 }
 
 .navbar .links .project:hover{
@@ -132,7 +155,7 @@
 
 .background .head h1{
     color: #fff;
-    width: 450px;
+    width: 400px;
 }
 
 .background .head p{
@@ -255,5 +278,25 @@ ul li a:hover{
 ul li {
     list-style: none;
 }
-
+.signup, .login{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 1140px;
+    left: 0;
+    top: 0;
+    padding: 0 15px;
+    background-color: #000000bb ;
+    z-index: 1;
+}
+form{
+    position: absolute;
+    z-index: 3;
+    top: 50px;
+    left: 30%;
+    margin: 25px auto;
+    width: 500px;
+    background-color: white;
+}
 /* end  footer */

@@ -1,0 +1,103 @@
+.active{
+    display: block !important;
+}
+
+input{
+    border-radius: 5px;
+    box-shadow: 0 0 0.1px 1px #45b654;
+    background-color: #f5f6f7;
+    border: none;
+    padding: 10px 5px;
+}
+
+form h3{
+    text-align: center;
+    margin: 10px auto;
+    font-size: 25px;
+    min-width: 400px;
+}
+.formitem{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 15px;
+}
+.fullname input{
+    width: 47%;
+    margin: 10px ;
+    font-size: large;
+    align-self: flex-start;
+}
+
+.email input, .password input,.remember {
+    width: 100%;
+    margin: 10px;
+    font-size: large;
+}
+.submit input{
+    font-size: large;
+    padding: 5px 10px;
+    background-color: #00a400;
+    color: white;
+    margin-bottom: 10px;
+}
+.dateofbirth, .gender{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.dateofbirth label{
+    width: 100%;
+    margin: 5px 10px;
+}
+.dateofbirth select{
+    width: 25%;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin: 10px;
+    padding: 5px 0;
+    border-radius: 5px;
+    background-color: #f5f6f7;
+    box-shadow: 0 0 0.1px 1px #45b654;
+    border: none;
+}
+.gender label:first-of-type{
+    width: 100%;
+    margin: 5px 10px;
+}
+.gender input, .remember input{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin: 10px;
+    padding: 5px 0;
+    border-radius: 5px;
+    background-color: #f5f6f7;
+    box-shadow: none;
+    border: none;
+}
+.submit input:hover{
+    background-color: white;
+    color: rgb(31, 28, 31);
+}
+.forget{
+    text-decoration: none;
+    color: rgb(4, 68, 20);
+}
+
+fieldset{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 2px #313331;
+    border: none;
+
+}
+form i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 18px;
+    transition: all .3s linear;
+}
+form i:hover{
+    color: red;
+    transform: rotateZ(900deg);
+}
